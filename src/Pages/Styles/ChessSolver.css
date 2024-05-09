@@ -1,0 +1,28 @@
+.solutions-list {
+    margin-top: -.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    list-style: none;
+    gap: 1rem;
+    max-width: 135vh;
+    padding: 1rem;
+}
+
+.solutions-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color-secondary);
+    row-gap: 1rem;
+}
+
+.solutions-list button {
+    width: 100%;
+}
+
+.solutions-list img {
+    width: 24rem;
+}

@@ -1,0 +1,66 @@
+.validate-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.validate-input .input {
+    display: block;
+    text-align: start;
+    text-wrap: wrap;
+    width: 30rem;
+    aspect-ratio: 3/1;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color-secondary);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+    outline: none;
+}
+
+.validate-input button {
+    width: 100%;
+}
+
+.rules-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+.rule-panel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 30rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+    padding: .5rem;
+    border: 1px solid var(--border-color);
+    font-size: 1.5rem;
+    background-color: var(--background-color-secondary);
+    gap: .5rem;
+}
+
+.rule-panel label {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rule-panel span {
+    text-align: start;
+}
+
+.passed-rule label::before {
+    content: '✔ ';
+    color: limegreen;
+}
+
+.failed-rule label::before {
+    content: '❌ ';
+    color: red;
+}

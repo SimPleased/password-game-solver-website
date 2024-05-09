@@ -1,0 +1,22 @@
+.geoguessr {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.geoguessr-embed-wrapper {
+    width: 50rem;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 12px;
+    isolation: isolate;
+}
+
+.geoguessr-embed {
+    width: 100%;
+    height: calc(100% + 85px);
+    border: none;
+    margin-top: -70px;
+}
