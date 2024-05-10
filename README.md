@@ -1,5 +1,3 @@
-# Password Game Solver Website
+# [Password Game Solver](https://passwordgamesolver.netlify.app/)
 
-[https://](https://passwordgamesolver.netlify.app/)
-
-This is a website version of my extension: [https://](https://github.com/SimPleased/Password-Game-Solver/releases)
+This is a website version of my [extension](https://github.com/SimPleased/Password-Game-Solver/releases).
