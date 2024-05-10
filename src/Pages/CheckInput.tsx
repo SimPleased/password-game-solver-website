@@ -181,7 +181,7 @@ const CheckInput: FunctionalComponent = () => {
                 passed: (input.current.textContent.match(/🏋️‍♂️/g)?.length ?? 0) >= 3
             }, {
                 desc: 'Your password must contain one of the following affirmations:\ni am loved, i am worthy, i am enough',
-                passed: input.current.textContent.match(/i am loved|i am worthy|i am enough/i)
+                passed: input.current.textContent.match(/i am loved|i am worthy|i am enough|iamloved|iamworthy|iamenough/i)
             }, {
                 desc: "Paul has hatched! Please don't forget to feed him, he eats three 🐛 every minute.",
                 passed: input.current.textContent.match('🐔')
