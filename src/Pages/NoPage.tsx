@@ -14,7 +14,7 @@ const NotFound: FunctionalComponent = () => {
 		<section>
 			<h1>404: Not Found</h1>
 			<span>
-				The page <b>{window.location.href}</b> could not be found
+				The page could not be found
 				<br/>
 				Redirecting you to home page in 5s
 			</span>
