@@ -16,10 +16,12 @@
 
 	--background-color: #1a1a1a;
 	--background-color-secondary: #161616;
+	--background-color-scrollbar: #2a2a2a;
 
 	--border-color: #2d2d2d;
 	--border-color-hover: #3d3d3d;
 	--border-color-nav: #4f4f4f;
+	--border-color-scrollbar: #5f5f5f;
 
 	--text-color: #c0c0c0;
 	--text-color-nav: #ffffff;
@@ -31,23 +33,24 @@ body {
 
 #app {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	min-height: 100vh;
 	min-width: 100vw;
+	margin: 0;
 }
 
 main {
 	flex: auto;
 	display: flex;
 	align-items: center;
-	max-width: 1280px;
-	margin: 0 auto;
+	margin: 0;
 	text-align: center;
 }
 
 ::-webkit-scrollbar {
-    height: .75rem;
-	width: .75rem;
+    height: 4vmin;
+	width: 2vmin;
 }
   
 ::-webkit-scrollbar-track {
@@ -55,9 +58,30 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--background-color-secondary);
+    background-color: var(--background-color-scrollbar);
     border-radius: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-scrollbar);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: var(--background-color-scrollbar);
+}
+
+::-webkit-scrollbar-button:horizontal {
+	display: flex;
+	width: 5vmin;
+	border-radius: 1rem;
+	border: 1px solid var(--border-color-scrollbar);
+	background: var(--background-color-secondary);
+	background-position-x: center;
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+	background-image: url('/arrow-right.svg');
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+	background-image: url('/arrow-left.svg');
 }
 
 select {
@@ -67,6 +91,7 @@ select {
     background-color: var(--background-color-secondary);
     outline: none;
 	color: var(--text-color);
+	font-size: 1.5vmax;
 }
 
 button {
@@ -79,6 +104,7 @@ button {
     outline: none;
     transition: .25s ease-out;
 	color: var(--text-color);
+	font-size: 1.5vmax;
 }
 
 button:hover {
@@ -93,15 +119,18 @@ input {
     background-color: var(--background-color-secondary);
     outline: none;
 	color: var(--text-color);
+	font-size: 1.5vmax;
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
 		--background-color: #e3e3e3;
 		--background-color-secondary: #ffffff;
+		--background-color-scrollbar: #b7b7b7;
 
 		--border-color: #666666;
 		--border-color-nav: #b0b0b0;
+		--border-color-scrollbar: #3f3f3f;
 
 		--text-color: #373737;
 		--text-color-nav: #000000;

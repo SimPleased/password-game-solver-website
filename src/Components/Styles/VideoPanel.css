@@ -6,9 +6,21 @@
     background-color: var(--background-color-secondary);
     border-radius: 1rem;
     border: 1px solid var(--border-color);
-    width: 25vmin;
+    width: 25vmax;
     padding: .75em 1.5em;
     gap: 5vmin;
+}
+
+.video-panel div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vmin;
+}
+
+.video-panel br {
+    display: block;
+    content: "";
+    margin-top: 1vmax;
 }
 
 .video-panel button {

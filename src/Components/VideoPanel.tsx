@@ -44,37 +44,40 @@ const VideoPanel: FunctionalComponent<VideoPanelProps> = ({ video }) => {
                 Copy Video
             </button>
 
-            <span>
-                <b>Video Length</b>
-                <br/>
-                {Math.floor(video.seconds / 60)}m {video.seconds % 60}s
-            </span>
+            <div>
+                <span>
+                    <b>Video Length</b>
+                    <br/>
+                    {Math.floor(video.seconds / 60)}m {video.seconds % 60}s
+                </span>
 
-            <span>
-                <b>Video ID</b>
-                <br/>
-                {video.id}
-            </span>
+                <span>
+                    <b>Video ID</b>
+                    <br/>
+                    {video.id}
+                </span>
 
-            <span>
-                <b>Atomic Value</b>
-                <br/>
-                {video.atomicNumber}
-                <br/>
-                This video uses the roman numerals {video.romanNumeralFormat ? 'XXXV' : 'VII V'}
-            </span>
+                <span>
+                    <b>Atomic Value</b>
+                    <br/>
+                    {video.atomicNumber}
+                </span>
 
-            {repeatedLetters.length !== 0 &&
-            <span>
-                <b>Repeated Letters</b>
-                <ul className='repeated-letters'>
-                    {repeatedLetters.map(({letter, count}) => (
-                        <li>
-                            <b>{letter}</b> (x{count})
-                        </li>
-                    ))}
-                </ul>
-            </span>}
+                {repeatedLetters.length !== 0
+                ? <span>
+                    <b>Repeated Letters</b>
+                    <ul className='repeated-letters'>
+                        {repeatedLetters.map(({letter, count}) => (
+                            <li>
+                                <b>{letter}</b> (x{count})
+                            </li>
+                        ))}
+                    </ul>
+                </span>
+                : <b>No Repeated Letters</b>}
+            </div>
+
+            <b>This video uses the roman numerals {video.romanNumeralFormat ? 'XXXV' : 'VII V'}</b>
         </div>
     )
 }

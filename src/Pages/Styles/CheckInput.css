@@ -58,11 +58,11 @@
     text-align: start;
 }
 
-br {
+.rule-panel br {
     display: block;
     content: "";
     margin-top: 2vmax;
- }
+}
 
 .passed-rule label::before {
     content: '✔ ';
