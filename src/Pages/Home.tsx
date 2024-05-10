@@ -10,7 +10,7 @@ const Home: FunctionalComponent = () => {
 				<img src={icon} alt="Preact logo" height="160" width="160" />
 			</a>
 
-			<h1>Paassword Game Solver</h1>
+			<h1>Password Game Solver</h1>
 
 			<span>
 				This is the website version of my <a href='https://github.com/SimPleased/Password-Game-Solver/releases/' target='_blank'>extension</a>.
