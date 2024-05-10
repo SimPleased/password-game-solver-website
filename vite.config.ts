@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
+import { RouteNames } from './src/assets/RouteNames';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +9,7 @@ export default defineConfig({
 			prerender: {
 				enabled: true,
 				renderTarget: '#app',
-				additionalPrerenderRoutes: ['/404'],
+				additionalPrerenderRoutes: [...Object.keys(RouteNames)],
 			},
 		}),
 	],

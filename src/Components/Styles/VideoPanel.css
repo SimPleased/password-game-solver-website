@@ -1,13 +1,14 @@
 .video-panel {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-color: var(--background-color-secondary);
     border-radius: 1rem;
     border: 1px solid var(--border-color);
-    width: 10rem;
-    padding: .75rem 1.5rem;
-    gap: 1rem;
+    width: 25vmin;
+    padding: .75em 1.5em;
+    gap: 5vmin;
 }
 
 .video-panel button {

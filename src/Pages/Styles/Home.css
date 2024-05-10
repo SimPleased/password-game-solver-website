@@ -1,5 +1,4 @@
 .home img {
-	margin-bottom: 1.5rem;
 	transition: .25s ease-in-out;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .resource {
-	padding: 0.75rem 1.5rem;
+	padding: .75vmax 1.5vmax;
 	border-radius: 0.5rem;
 	text-align: left;
 	text-decoration: none;
@@ -40,4 +39,10 @@
 .resource:hover {
 	filter: brightness(200%);
 	transform: scale(1.1);
+}
+
+@media (prefers-color-scheme: light) {
+	.resource:hover {
+		filter: brightness(95%);
+	}
 }

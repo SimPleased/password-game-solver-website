@@ -1,33 +1,36 @@
 header {
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 	background-color: var(--background-color-secondary);
 	border-bottom: 1px solid var(--border-color-nav);
+	height: 10vh;
+	padding-inline: 2vw;
 }
 
 header nav {
 	display: flex;
 	flex-direction: row;
-	gap: 6px;
+	gap: 3vw;
+	font-size: 3vmin;
 }
 
 header a {
 	color: var(--text-color-nav);
 	font-weight: 500;
-	padding: 1.25rem;
 	text-decoration: none;
 	transition: .25s ease-in-out;
-	transform: translateY(.25rem);
+	transform: translateY(1vh);
 }
 
 header a:hover {
-	transform: translateY(-.25rem);
+	transform: translateY(-1vh);
 }
 
 header a.active {
-	transform: scale(1.2) translateY(.2rem);
+	transform: scale(1.2) translateY(.5vh);
 }
 
 header a.active:hover {
-	transform: scale(1.2) translateY(-.25rem);
+	transform: scale(1.2) translateY(-.5vh);
 }

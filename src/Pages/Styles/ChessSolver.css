@@ -1,12 +1,11 @@
 .solutions-list {
-    margin-top: -.5rem;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     overflow-x: auto;
     list-style: none;
-    gap: 1rem;
-    max-width: 135vh;
-    padding: 1rem;
+    gap: 2.5vw;
+    max-height: 95vh;
+    width: 100vw;
 }
 
 .solutions-list li {
@@ -24,5 +23,5 @@
 }
 
 .solutions-list img {
-    width: 24rem;
+    width: 60vmin;
 }
