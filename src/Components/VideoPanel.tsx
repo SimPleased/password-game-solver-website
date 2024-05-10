@@ -57,7 +57,7 @@ const VideoPanel: FunctionalComponent<VideoPanelProps> = ({ video }) => {
             </span>
 
             <span>
-                <b>Attomic Value</b>
+                <b>Atomic Value</b>
                 <br/>
                 {video.atomicNumber}
                 <br/>
