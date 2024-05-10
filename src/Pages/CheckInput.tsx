@@ -308,7 +308,7 @@ const CheckInput: FunctionalComponent = () => {
   
           if (romanValue !== undefined) {
             if (lastRoman) {
-              const lastRomanChar = romanNumeralValues[romanNumeralValues.length - 1][0].charAt(romanNumeralValues[romanNumeralValues.length - 1][0].length - 1);
+              const lastRomanChar = romanNumeralValues[romanNumeralValues.length - 1].text.charAt(romanNumeralValues[romanNumeralValues.length - 1].text.length - 1);
               const lastRomanValue = romanNumerals.get(lastRomanChar);
               if (lastRomanValue < romanValue) {
                 romanNumeralValues.push({text: input[i], value: romanValue});
