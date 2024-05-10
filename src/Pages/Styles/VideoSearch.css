@@ -9,7 +9,7 @@
 }
 
 .video-search input {
-    width: 2em;
+    width: 2.5em;
 }
 
 .video-filters {
@@ -34,7 +34,7 @@
     margin-top: -.5em;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: start;
     overflow-x: auto;
     list-style: none;
     gap: 1em;
