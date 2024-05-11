@@ -1,11 +1,13 @@
-.home img {
-	border: 1px solid var(--border-color);
-	border-radius: 50%;
-	transition: .25s ease-in-out;
+.home {
+	margin-top: 4vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
 }
 
-.home img:hover {
-	transform: scale(1.2) rotate(72deg);
+.home h1 {
+	font-size: 6vmin;
 }
 
 .home a {
@@ -17,19 +19,39 @@
 .home section {
 	margin-top: 2rem;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	column-gap: 1.5rem;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 2vh 2vw;
+	padding-top: 0;
+	column-gap: 1.5vw;
 }
 
 @media (max-width: 639px) {
 	.home section {
 		grid-template-columns: 1fr;
-		row-gap: 1rem;
+		max-width: 80vmin;
+		row-gap: 2vh;
 	}
 }
 
+.logo {
+	border: 1px solid var(--border-color);
+	border-radius: 50%;
+	transition: .25s ease-in-out;
+	width: fit-content;
+	height: fit-content;
+}
+
+.logo img {
+	width: 30vmin;
+	height: 30vmin;
+}
+
+.logo:hover {
+	transform: scale(1.2) rotate(72deg);
+}
+
 .resource {
-	padding: .75vmax 1.5vmax;
+	padding: .75vmin 1.5vmin;
 	border-radius: 0.5rem;
 	text-align: left;
 	text-decoration: none;

@@ -158,19 +158,23 @@ const FindCountry: FunctionalComponent = () => {
         embed: "https://www.google.com/maps/embed?pb=!4v1687119389195!6m8!1m7!1sO7gt2w-yxeZI97e82gkunQ!2m2!1d65.80550118091678!2d21.67888296764118!3f202.99!4f0.8499999999999943!5f0.4000000000000002"
     }];
 
-    const [country, setCounty] = useState(countries[1].name)
+    const [countryIndex, setCountyIndex] = useState(0)
 
     return (
         <div className='geoguessr'>
             <b>
                Country
             </b>
-            <select onChange={e => setCounty((e.target as HTMLSelectElement).value)}>
-                {countries.map(({name}) => <option value={name}>{name}</option>)}
-            </select>
+            <div>
+                <button onClick={() => setCountyIndex(oldIndex => Math.max(oldIndex - 1, 0))}>Previous Country</button>
+                <select onChange={e => setCountyIndex(parseInt((e.target as HTMLSelectElement).value))} value={countryIndex}>
+                    {countries.map(({name}, i) => <option value={i}>{name}</option>)}
+                </select>
+                <button onClick={() => setCountyIndex(oldIndex => Math.min(oldIndex + 1, countries.length - 1))}>Next Country</button>
+            </div>
 
             <div class="geoguessr-embed-wrapper">
-                <iframe class="geoguessr-embed" src={countries.find(({name}) => name === country).embed} />
+                <iframe class="geoguessr-embed" src={countries[countryIndex].embed} />
             </div>
         </div>
     )

@@ -1,14 +1,11 @@
 .video-search {
     display: flex;
+    align-self: start;
     align-items: center;
     flex-direction: column;
-    padding: 1vh;
-    width: 100vw;
+    padding: 1vmax;
+    width: 100vmin;
     gap: .5em;
-}
-
-.video-search input {
-    width: 2.5em;
 }
 
 .video-filters {
@@ -30,7 +27,6 @@
 }
 
 .videos-found {
-    margin-top: -.5em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -39,4 +35,5 @@
     gap: 1em;
     max-width: 100vw;
     padding: 2em 0;
+    padding-top: 0;
 }

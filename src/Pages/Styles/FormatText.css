@@ -1,0 +1,46 @@
+.format-text {
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    margin-top: 4vmin;
+    gap: 4vmin;
+}
+
+.format-text .input, .format-text .output > div {
+    display: block;
+    align-self: center;
+    text-align: start;
+    text-wrap: wrap;
+    width: 80vmin;
+    aspect-ratio: 3/1;
+    padding: 5vmin;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color-secondary);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+    outline: none;
+}
+
+.format-text .output {
+    display: flex;
+    flex-direction: column;
+    width: 80vmin;
+    padding: 5vmin;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    background-color: var(--background-color-secondary);
+    gap: 2vmin;
+}
+
+.format-text button {
+    width: 100%;
+}
+
+.format-text .output > div {
+    display: flex;
+    flex-direction: row;
+    width: 70vmin;
+    flex-wrap: wrap;
+}

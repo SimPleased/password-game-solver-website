@@ -34,6 +34,7 @@ body {
 #app {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	min-height: 100vh;
 	min-width: 100vw;
@@ -73,7 +74,8 @@ main {
 	border-radius: 1rem;
 	border: 1px solid var(--border-color-scrollbar);
 	background: var(--background-color-secondary);
-	background-position-x: center;
+	background-position: center;
+	background-size: 100%;
 }
 
 ::-webkit-scrollbar-button:horizontal:increment {

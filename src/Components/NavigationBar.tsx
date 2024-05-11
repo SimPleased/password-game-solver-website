@@ -18,11 +18,14 @@ const NavigationBar: FunctionalComponent = () => {
 				<a href={RouteNames.SOLVE_CHESS} class={url === RouteNames.SOLVE_CHESS && 'active'}>
 					Chess Solver
 				</a>
-				<a href={RouteNames.CHECK_INPUT} class={url === RouteNames.CHECK_INPUT && 'active'}>
-					Check Input
+				<a href={RouteNames.CHECK_PASSWORD} class={url === RouteNames.CHECK_PASSWORD && 'active'}>
+					Check Password
 				</a>
 				<a href={RouteNames.FIND_COUNTY} class={url === RouteNames.FIND_COUNTY && 'active'}>
 					Find Country
+				</a>
+				<a href={RouteNames.FORMAT_TEXT} class={url === RouteNames.FORMAT_TEXT && 'active'}>
+					Format Text
 				</a>
 			</nav>
 		</header>

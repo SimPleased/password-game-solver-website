@@ -7,8 +7,9 @@ import { FunctionalComponent } from 'preact';
 import { RouteNames } from './assets/RouteNames';
 import VideoSearch from './Pages/VideoSearch';
 import ChessSolver from './Pages/ChessSolver';
-import CheckInput from './Pages/CheckInput';
+import CheckPassword from './Pages/CheckPassword';
 import FindCountry from './Pages/FindCountry';
+import FormatText from './Pages/FormatText';
 
 export const App: FunctionalComponent = () => {
 	return (
@@ -19,8 +20,9 @@ export const App: FunctionalComponent = () => {
 					<Route path={RouteNames.HOME} component={Home} />
 					<Route path={RouteNames.SEARCH_VIDEO} component={VideoSearch} />
 					<Route path={RouteNames.SOLVE_CHESS} component={ChessSolver} />
-					<Route path={RouteNames.CHECK_INPUT} component={CheckInput} />
+					<Route path={RouteNames.CHECK_PASSWORD} component={CheckPassword} />
 					<Route path={RouteNames.FIND_COUNTY} component={FindCountry} />
+					<Route path={RouteNames.FORMAT_TEXT} component={FormatText} />
 					<Route default component={NotFound} />
 				</Router>
 			</main>

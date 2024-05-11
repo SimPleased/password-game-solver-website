@@ -5,8 +5,8 @@ import { RouteNames } from '../assets/RouteNames';
 
 const Home: FunctionalComponent = () => {
 	return (
-		<div class="home">
-			<a href="https://neal.fun/password-game/" target="_blank">
+		<div className="home">
+			<a className='logo' href="https://neal.fun/password-game/" target="_blank">
 				<img src={icon} alt="Preact logo" height="160" width="160" />
 			</a>
 
@@ -30,7 +30,12 @@ const Home: FunctionalComponent = () => {
 				<Resource
 					title="Input Validator"
 					description="This will find all the rules that you are failing"
-					href={RouteNames.CHECK_INPUT}
+					href={RouteNames.CHECK_PASSWORD}
+				/>
+				<Resource
+					title="Find Country"
+					description="Having trouble finding the country location, heres a tool to help"
+					href={RouteNames.FIND_COUNTY}
 				/>
 				<Resource
 					title="Find Country"
@@ -50,7 +55,7 @@ interface ResourceProps {
 
 const Resource: FunctionalComponent<ResourceProps> = (props) => {
 	return (
-		<a href={props.href} class="resource">
+		<a href={props.href} className="resource">
 			<h2>{props.title}</h2>
 			<p>{props.description}</p>
 		</a>
