@@ -29,7 +29,7 @@ const Home: FunctionalComponent = () => {
 				/>
 				<Resource
 					title="Input Validator"
-					description="This will find all the rules that you are failing"
+					description="This will tell you all the rules that you are violating"
 					href={RouteNames.CHECK_PASSWORD}
 				/>
 				<Resource
@@ -38,8 +38,8 @@ const Home: FunctionalComponent = () => {
 					href={RouteNames.FIND_COUNTY}
 				/>
 				<Resource
-					title="Find Country"
-					description="Having trouble finding the country location, heres a tool to help"
+					title="Format Text"
+					description="Quickly formats your password correctly in a blink of an eye"
 					href={RouteNames.FIND_COUNTY}
 				/>
 			</section>
