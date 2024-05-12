@@ -1,5 +1,5 @@
 import { FunctionalComponent } from 'preact';
-import icon from '../assets/icon128.png';
+import icon from '../assets/icon.svg';
 import './Styles/Home.css';
 import { RouteNames } from '../assets/RouteNames';
 
