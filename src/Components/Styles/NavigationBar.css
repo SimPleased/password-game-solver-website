@@ -11,7 +11,7 @@ header {
 header nav {
 	display: flex;
 	flex-direction: row;
-	gap: 4vmin;
+	gap: 4vw;
 	font-size: 3vmin;
 	padding-inline: 4vw;
 }
@@ -25,7 +25,7 @@ header a {
 	transition: .25s ease-in-out;
 	transform: translateY(.5vh);
 	padding: 3vh 0;
-	font-size: 2vmin;
+	font-size: 2vw;
 }
 
 header a:hover {
