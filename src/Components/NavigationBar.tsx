@@ -1,6 +1,7 @@
 import { FunctionalComponent } from 'preact';
 import { useLocation } from 'preact-iso';
 import { RouteNames } from '../assets/RouteNames';
+import logo from '../assets/icon128.png';
 import './Styles/NavigationBar.css';
 
 const NavigationBar: FunctionalComponent = () => {

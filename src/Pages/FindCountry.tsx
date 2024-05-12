@@ -162,15 +162,23 @@ const FindCountry: FunctionalComponent = () => {
 
     return (
         <div className='geoguessr'>
-            <b>
-               Country
-            </b>
-            <div>
-                <button onClick={() => setCountyIndex(oldIndex => Math.max(oldIndex - 1, 0))}>Previous Country</button>
-                <select onChange={e => setCountyIndex(parseInt((e.target as HTMLSelectElement).value))} value={countryIndex}>
-                    {countries.map(({name}, i) => <option value={i}>{name}</option>)}
-                </select>
-                <button onClick={() => setCountyIndex(oldIndex => Math.min(oldIndex + 1, countries.length - 1))}>Next Country</button>
+            <div className='controls'>
+                <div>
+                    <button onClick={() => setCountyIndex(oldIndex => Math.max(oldIndex - 1, 0))}>
+                        Previous Country
+                    </button>
+
+                    <select onChange={e => setCountyIndex(parseInt((e.target as HTMLSelectElement).value))} value={countryIndex}>
+                        {countries.map(({name}, i) => <option value={i}>{name}</option>)}
+                    </select>
+
+                    <button onClick={() => setCountyIndex(oldIndex => Math.min(oldIndex + 1, countries.length - 1))}>
+                        Next Country
+                    </button>
+                </div>
+                
+
+                <button className='copy-country'>Copy Country</button>
             </div>
 
             <div class="geoguessr-embed-wrapper">

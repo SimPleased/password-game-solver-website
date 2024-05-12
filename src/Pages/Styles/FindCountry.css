@@ -6,6 +6,25 @@
     padding: 2vmin;
 }
 
+.geoguessr .controls {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-self: center;
+    gap: 2vmin;
+}
+
+.geoguessr .controls div {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    gap: 2vmin;
+}
+
+.geoguessr .copy-country {
+    width: 100%;
+}
+
 .geoguessr-embed-wrapper {
     width: 80vw;
     height: 70vh;

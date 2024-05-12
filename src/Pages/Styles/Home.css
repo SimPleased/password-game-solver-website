@@ -1,5 +1,5 @@
 .home {
-	margin-top: 4vh;
+	margin-top: 4vmax;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -7,7 +7,7 @@
 }
 
 .home h1 {
-	font-size: 6vmin;
+	font-size: 4vmax;
 }
 
 .home a {
@@ -17,7 +17,7 @@
 }
 
 .home section {
-	margin-top: 2rem;
+	margin-top: 2vmax;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	padding: 2vh 2vw;
@@ -42,8 +42,8 @@
 }
 
 .logo img {
-	width: 30vmin;
-	height: 30vmin;
+	width: 20vmax;
+	height: 20vmax;
 }
 
 .logo:hover {
